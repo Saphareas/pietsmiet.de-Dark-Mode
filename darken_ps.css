@@ -1,0 +1,37 @@
+body {
+    background-color: rgba(17, 17, 17, 1);
+    color: rgba(255, 255, 255, 0.882);
+}
+
+.main .container {
+    background-color: rgba(28, 28, 28, 1);
+    color: rgba(255, 255, 255, 0.882);
+}
+
+h1 a:link,
+h2 a:link,
+h3 a:link,
+h4 a:link,
+h5 a:link {
+    color: rgba(255, 255, 255, 0.882);
+}
+
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited {
+     color: rgba(255, 255, 255, 0.882);
+}
+
+.latestnews-headline {
+     color: rgba(255, 255, 255, 0.882);
+}
+
+.breadcrumb li.active {
+     color: #999;
+}
+
+.breadcrumb a {
+     color: rgba(255, 255, 255, 0.882);
+}
