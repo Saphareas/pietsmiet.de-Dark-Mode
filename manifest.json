@@ -18,7 +18,21 @@
           "js": ["content.js"]
         }
       ],
-    
+
+      "background": {
+          "scripts": ["background.js"],
+          "persistent": true
+        },
+
+      "page_action": {
+        "browser_style": true,
+        "default_icon": {
+            "19": "icons/action-off-19.png",
+            "38": "icons/action-off-38.png"
+        },
+        "default_title": "Abdunkeln"
+      },
+
       "permissions": [
         "activeTab"
       ],
