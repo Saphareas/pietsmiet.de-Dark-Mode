@@ -1,37 +1,57 @@
+/* Hintergrund und Textfarbe der Hauptseite */
 body {
-    background-color: rgba(17, 17, 17, 1);
-    color: rgba(255, 255, 255, 0.882);
+    background-color: #111111;
+    color: #fff;
 }
 
+/* Hintergrund und Textfarbe des Video-Containers */
 .main .container {
-    background-color: rgba(28, 28, 28, 1);
-    color: rgba(255, 255, 255, 0.882);
+    background-color: #242424;
+    color: #fff;
 }
 
+/* Textfarbe für alle Überschriften */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #fff;
+}
+
+/* Textfarbe für alle Überschriften-Links... */
 h1 a:link,
 h2 a:link,
 h3 a:link,
 h4 a:link,
 h5 a:link {
-    color: rgba(255, 255, 255, 0.882);
+    color: #fff;
 }
 
+/* ...auch die bereits besuchten */
 h1 a:visited,
 h2 a:visited,
 h3 a:visited,
 h4 a:visited,
 h5 a:visited {
-     color: rgba(255, 255, 255, 0.882);
+    color: #fff;
 }
 
-.latestnews-headline {
-     color: rgba(255, 255, 255, 0.882);
+/* Explizit Textfarbe für... */
+.latestnews-headline, /* Newsüberschriften */
+.ob-rec-text, /* Anzeigenüberschriften */
+.breadcrumb li.active, /* aktives Breadcrumb */
+.comment-body /* Kommentare */ {
+    color: #fff !important;
 }
 
-.breadcrumb li.active {
+/* Breadcrumbs etwas dunkler/grauer */
+.breadcrumb a {
      color: #999;
 }
 
-.breadcrumb a {
-     color: rgba(255, 255, 255, 0.882);
+/* Break-Farbe von Beige auf Weiß zu Schwarz auf Grau */
+hr {
+    border-top: 1px solid #111111;
+    border-bottom: 1px solid #242424;
 }

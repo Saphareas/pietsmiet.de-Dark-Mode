@@ -1,15 +1,16 @@
-var tabID;
+var tabID; //global ist nicht schön
 
+//Zeige die Page Action für den Tab, aus dem eine Message kam (pietsmiet.de)
 function showPageAction(request, sender) {
     tabID = sender.tab.id;
     chrome.pageAction.show(tabID);
 }
 
-chrome.runtime.onMessage.addListener(showPageAction);
+chrome.runtime.onMessage.addListener(showPageAction); //Sobald das Background-Script eine Message erhält, showPageAction ausführen
 
 function toggleDarkMode(actionTitle) {
     if (actionTitle == "Abdunkeln") {
-        chrome.tabs.sendMessage(tabID, "toDark");
+        chrome.tabs.sendMessage(tabID, "toDark"); //benachrichtige Content-Script, das Theme zu dunkel zu wechseln
         chrome.pageAction.setTitle({tabId: tabID, title: "Zurück zu Normal"});
         chrome.pageAction.setIcon({tabId: tabID, path: {
             19: "icons/action-19.png",
@@ -17,7 +18,7 @@ function toggleDarkMode(actionTitle) {
         }});
     }
     else {
-        chrome.tabs.sendMessage(tabID, "reset");
+        chrome.tabs.sendMessage(tabID, "reset"); //benachrichtige Content-Script, das Theme zu normal zu wechseln
         chrome.pageAction.setTitle({tabId: tabID, title: "Abdunkeln"});
         chrome.pageAction.setIcon({tabId: tabID, path: {
             19: "icons/action-off-19.png",
@@ -26,8 +27,10 @@ function toggleDarkMode(actionTitle) {
     }
 }
 
+//Helper-Funktion, weil getTitle unbedingt einen Callback haben muss o.O
 function _toggleDarkModeHelper() {
+    //ruft toggleDarkMode auf und übergibt den aktuellen Action Title
     chrome.pageAction.getTitle({tabId: tabID}, toggleDarkMode);
 }
 
-chrome.pageAction.onClicked.addListener(_toggleDarkModeHelper);
+chrome.pageAction.onClicked.addListener(_toggleDarkModeHelper); //sobald auf die Page Action geklickt wurde, führe _toggleDarkModeHelper aus
