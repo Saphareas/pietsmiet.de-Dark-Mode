@@ -18,3 +18,8 @@ function onToggleMode(request, sender) {
 
 chrome.runtime.onMessage.addListener(onToggleMode); //Sobald das Content-Script eine Message erhält, onToggleMode ausführen
 
+// Antworten-Button Fix
+var comments = document.getElementsByClassName("comment-body");
+for (i=0; i < comments.length; i++) {
+    commBodies[i].parentNode.children[2].setAttribute("class","comments-buttons");
+}
