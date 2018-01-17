@@ -1,3 +1,13 @@
+/*
+ * ----------------------------------------------------------------------------
+ * "THE BEER-WARE LICENSE" (Revision 17):
+ * <saphareas@gmail.com> wrote this file.  As long as you retain this notice you
+ * can use this stuff for any non-commercial purposes. If we meet some day,
+ * and you think this stuff is worth it, you can buy me a beer in return.
+ *                                                                Fabian Große
+ * ----------------------------------------------------------------------------
+ */
+
 var tabID; //global ist nicht schön
 
 function init() {

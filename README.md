@@ -42,3 +42,10 @@ Einfach [hier](https://github.com/Saphareas/pietsmiet.de-Dark-Mode/issues) auf G
 
 #### Info für den Webmaster von pietsmiet.de
 Bei den "Antworten"-Buttons unter den Kommentaren ist im HTML-Code ein Fehler. Dort steht bei ```<span cass="comments-buttons">``` eben "cass" statt "class" in den Element-Properties. Ich habe dafür in dieser Erweiterung einen Fix eingebaut.
+<hr>
+
+_Einige Dateien in diesem Repository stehen unter einer angepassten **Beer-ware** Lizenz. (siehe Header in entsprechenden Dateien)
+Die Rechte in den Bildern liegen bei Pietsmiet._
+
+_Some files in this repository are licensed under a customized version of the **Beer-ware** License. (see Header of the affected files)
+The copyrights for the images are  owned by Pietsmiet._
