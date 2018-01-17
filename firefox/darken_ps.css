@@ -1,0 +1,67 @@
+/*
+ * ----------------------------------------------------------------------------
+ * "THE BEER-WARE LICENSE" (Revision 17):
+ * <saphareas@gmail.com> wrote this file.  As long as you retain this notice you
+ * can use this stuff for any non-commercial purposes. If we meet some day,
+ * and you think this stuff is worth it, you can buy me a beer in return.
+ *                                                                Fabian Große
+ * ----------------------------------------------------------------------------
+ */
+
+/* Hintergrund und Textfarbe der Hauptseite */
+body {
+    background-color: #111111;
+    color: #fff;
+}
+
+/* Hintergrund und Textfarbe des Video-Containers */
+.main .container {
+    background-color: #242424;
+    color: #fff;
+}
+
+/* Textfarbe für alle Überschriften */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #fff;
+}
+
+/* Textfarbe für alle Überschriften-Links... */
+h1 a:link,
+h2 a:link,
+h3 a:link,
+h4 a:link,
+h5 a:link {
+    color: #fff;
+}
+
+/* ...auch die bereits besuchten */
+h1 a:visited,
+h2 a:visited,
+h3 a:visited,
+h4 a:visited,
+h5 a:visited {
+    color: #fff;
+}
+
+/* Explizit Textfarbe für... */
+.latestnews-headline, /* Newsüberschriften */
+.ob-rec-text, /* Anzeigenüberschriften */
+.breadcrumb li.active, /* aktives Breadcrumb */
+.comment-body /* Kommentare */ {
+    color: #fff !important;
+}
+
+/* Breadcrumbs etwas dunkler/grauer */
+.breadcrumb a {
+     color: #999;
+}
+
+/* Break-Farbe von Beige auf Weiß zu Schwarz auf Grau */
+hr {
+    border-top: 1px solid #111111;
+    border-bottom: 1px solid #242424;
+}

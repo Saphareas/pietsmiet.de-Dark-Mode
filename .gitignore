@@ -1,6 +1,4 @@
 icons/action.xcf
 TODO.txt
-
-*.crx
-
-*.pem
+.releases
+chrome/icons/icon-128\.png
