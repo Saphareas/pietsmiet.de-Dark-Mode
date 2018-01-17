@@ -1,55 +1,44 @@
-/*
- * ----------------------------------------------------------------------------
- * "THE BEER-WARE LICENSE" (Revision 17):
- * <saphareas@gmail.com> wrote this file.  As long as you retain this notice you
- * can use this stuff for any non-commercial purposes. If we meet some day,
- * and you think this stuff is worth it, you can buy me a beer in return.
- *                                                                Fabian Große
- * ----------------------------------------------------------------------------
- */
-
 {
-    
-      "manifest_version": 2,
-      "name": "Pietsmiet.de Dark Mode",
-      "version": "17",
-      "author": "Fabian Große/Saphareas",
-    
-      "description": "Fügt der Pietsmiet.de-Seite ein dunkles Theme/einen Nachtmodus hinzu.",
+  "manifest_version": 2,
+  "name": "Pietsmiet.de Dark Mode",
+  "version": "17",
+  "author": "Fabian Große/Saphareas",
 
-      "icons": {
-        "48": "icons/icon-48.png",
-        "96": "icons/icon-96.png"
-      },
+  "description": "Fügt der Pietsmiet.de-Seite ein dunkles Theme/einen Nachtmodus hinzu.",
 
-      "content_scripts": [
-        {
-          "matches": ["*://*.pietsmiet.de/*"],
-          "js": ["content.js"]
-        }
-      ],
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  },
 
-      "background": {
-          "scripts": ["background.js"],
-          "persistent": true
-        },
-
-      "page_action": {
-        "browser_style": true,
-        "default_icon": {
-            "19": "icons/action-off-19.png",
-            "38": "icons/action-off-38.png"
-        },
-        "default_title": "Abdunkeln"
-      },
-
-      "permissions": [
-        "activeTab",
-        "storage"
-      ],
-
-      "web_accessible_resources": [
-          "darken_ps.css"
-      ]
-    
+  "content_scripts": [
+    {
+      "matches": ["*://*.pietsmiet.de/*"],
+      "js": ["content.js"]
     }
+  ],
+
+  "background": {
+      "scripts": ["background.js"],
+      "persistent": true
+    },
+
+  "page_action": {
+    "browser_style": true,
+    "default_icon": {
+        "19": "icons/action-off-19.png",
+        "38": "icons/action-off-38.png"
+    },
+    "default_title": "Abdunkeln"
+  },
+
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+
+  "web_accessible_resources": [
+      "darken_ps.css"
+  ]
+
+}

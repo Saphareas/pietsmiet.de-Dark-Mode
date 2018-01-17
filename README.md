@@ -30,10 +30,7 @@ Das dunkle Theme bleibt auch aktiv, wenn ihr euren Browser neustartet.
 ![3. Install](.github/darken_ps_inst_ch_3.PNG)
 
 #### Firefox
-2. Die Erweiterungsseite aufrufen
-![2. Add-Ons](.github/darken_ps_inst_ff_2.PNG)
-3. Erweitering laden
-![3. Install](.github/darken_ps_inst_ff_3.PNG)
+Bald verfügbar, jetzt noch nicht :(
 <hr>
 
 ## Bei Problemen/Vorschlägen
