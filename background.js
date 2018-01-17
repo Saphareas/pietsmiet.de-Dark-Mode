@@ -1,12 +1,26 @@
 var tabID; //global ist nicht schön
 
+function init() {
+    var getStorage = chrome.storage.local.get(null,
+        function getStorageCallback(items){
+            if ("isDark" in items) {
+                if (items["isDark"]) {
+                    _toggleDarkModeHelper();
+                }
+            }
+            else {
+                chrome.storage.local.set({isDark: false});
+            }
+        }
+    )
+}
+
 //Zeige die Page Action für den Tab, aus dem eine Message kam (pietsmiet.de)
 function showPageAction(request, sender) {
     tabID = sender.tab.id;
     chrome.pageAction.show(tabID);
+    init();
 }
-
-chrome.runtime.onMessage.addListener(showPageAction); //Sobald das Background-Script eine Message erhält, showPageAction ausführen
 
 function toggleDarkMode(actionTitle) {
     if (actionTitle == "Abdunkeln") {
@@ -33,4 +47,5 @@ function _toggleDarkModeHelper() {
     chrome.pageAction.getTitle({tabId: tabID}, toggleDarkMode);
 }
 
+chrome.runtime.onMessage.addListener(showPageAction); //Sobald das Background-Script eine Message erhält, showPageAction ausführen
 chrome.pageAction.onClicked.addListener(_toggleDarkModeHelper); //sobald auf die Page Action geklickt wurde, führe _toggleDarkModeHelper aus
