@@ -7,6 +7,7 @@ Ich bin jemand, der gerne Abends im Bett und vor dem Schlafen Pietsmiet-Videos s
 ## Vorschau
 <img src=".github/darken_ps_RdMe_2.PNG" width=400 />
 <img src=".github/darken_ps_RdMe_4.PNG" width=400 />
+<hr />
 
 ## Wie funktioniert's?
 Wenn ihr die Erweiterung für euren Browser installiert habt, erscheint in der Adressleiste ein Pietsmiet-Icon, sobald ihr pietsmiet.de aufruft.
@@ -18,19 +19,25 @@ Das dunkle Theme bleibt auch aktiv, wenn ihr euren Browser neustartet.
 <hr>
 
 ## Installation
-**INFO:** Die Erweiterung ist bald auch in den Addon-Stores von Chrome und Firefox verfügbar.
+**INFO:** Die Erweiterung wird NICHT im Addon-Store von Chrome erscheinen. Das kostet mich eine Entwickler-Gebühr.
 
-1. Die Erweiterung runterladen
+1. Release-Seite von diesem Repository aufrufen
 ![1. Download](.github/darken_ps_inst_1.PNG)
+2. Entsprechende Version auswählen und runterladen
+![2. Select Version](.github/darken_ps_inst_2.PNG)
 
 #### Chrome
-2. Die Erweiterungsseite aufrufen
-![2. Add-Ons](.github/darken_ps_inst_ch_2.PNG)
-3. Entwicklereinstellungen aktivieren und die Erweitering laden
-![3. Install](.github/darken_ps_inst_ch_3.PNG)
+3. Runtergeladene Zip-Datei in Ordner entpacken
+![3. Unzip](.github/darken_ps_inst_ch_3.PNG)
+4. In Chrome die _Erweiterungen_-Seite aufrufen
+![4. Addon-Page](.github/darken_ps_inst_ch_4.PNG)
+5. Entwicklermodus anschalten und die Erweiterung laden (den Ordner, in den ihr die Zip entpackt habt)
+![5. Load Addon](.github/darken_ps_inst_ch_5.PNG)
 
 #### Firefox
-Bald verfügbar, jetzt noch nicht :(
+3. Die Erweiterungs-Datei sollte automatisch vom Firefox geöffnet werden. Einfach den Anweisungen folgen.
+![3. Allow](.github/darken_ps_inst_ff_3.PNG)
+![3. Install](.github/darken_ps_inst_ff_4.PNG)
 <hr>
 
 ## Bei Problemen/Vorschlägen
