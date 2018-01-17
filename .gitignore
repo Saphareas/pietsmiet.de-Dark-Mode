@@ -1,2 +1,6 @@
 icons/action.xcf
 TODO.txt
+
+*.crx
+
+*.pem
