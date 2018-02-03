@@ -1,0 +1,15 @@
+html, body,
+#content, #primary
+.post,
+.entry-header,
+.entry-title a,
+.entry-meta,
+.entry-content {
+    background: #242424 !important;
+    color: #fff !important;
+}
+
+.cat-links a,
+.page-numbers:link {
+    color: #767676;
+}

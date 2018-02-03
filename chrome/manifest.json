@@ -1,8 +1,9 @@
 {
   "manifest_version": 2,
   "name": "Pietsmiet.de Dark Mode",
-  "version": "17.1",
+  "version": "17.2",
   "author": "Fabian Große/Saphareas",
+  "homepage_url": "https://github.com/Saphareas/pietsmiet.de-Dark-Mode",
 
   "description": "Fügt der Pietsmiet.de-Seite ein dunkles Theme/einen Nachtmodus hinzu.",
 
@@ -38,7 +39,8 @@
   ],
 
   "web_accessible_resources": [
-      "darken_ps.css"
+      "darken_ps.css",
+      "darken_podcast.css"
   ]
 
 }

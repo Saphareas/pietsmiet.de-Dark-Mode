@@ -1,13 +1,18 @@
 /* Hintergrund und Textfarbe der Hauptseite */
-body {
-    background-color: #111111;
-    color: #fff;
+body,
+iframe {
+    background: #111111 !important;
+    color: #fff !important;
 }
 
 /* Hintergrund und Textfarbe des Video-Containers */
-.main .container {
-    background-color: #242424;
-    color: #fff;
+.main .container,
+.pagenav {
+    background: #242424 !important;
+    color: #fff !important;
+}
+a.pagenav {
+    color: #0b8043 !important;
 }
 
 /* Textfarbe für alle Überschriften */
@@ -16,7 +21,7 @@ h2,
 h3,
 h4,
 h5 {
-    color: #fff;
+    color: #fff !important;
 }
 
 /* Textfarbe für alle Überschriften-Links... */
@@ -25,7 +30,7 @@ h2 a:link,
 h3 a:link,
 h4 a:link,
 h5 a:link {
-    color: #fff;
+    color: #fff !important;
 }
 
 /* ...auch die bereits besuchten */
@@ -34,7 +39,7 @@ h2 a:visited,
 h3 a:visited,
 h4 a:visited,
 h5 a:visited {
-    color: #fff;
+    color: #fff !important;
 }
 
 /* Explizit Textfarbe für... */
@@ -47,11 +52,11 @@ h5 a:visited {
 
 /* Breadcrumbs etwas dunkler/grauer */
 .breadcrumb a {
-     color: #999;
+     color: #999 !important;
 }
 
 /* Break-Farbe von Beige auf Weiß zu Schwarz auf Grau */
 hr {
-    border-top: 1px solid #111111;
-    border-bottom: 1px solid #242424;
+    border-top: 1px solid #111111 !important;
+    border-bottom: 1px solid #242424 !important;
 }
