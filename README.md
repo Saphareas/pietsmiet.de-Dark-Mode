@@ -1,6 +1,16 @@
 <a href="https://vivaldi.com?pk_campaign=Banners&pk_kwd=i_use_105x20"><img src="https://vivaldi.com/buttons/files/i_use_105x20.png" alt="Download Vivaldi Web Browser Today!" style="border:0"></a>
 
-# pietsmiet.de Dark Mode
+# Pietsmiet Dark Mode
+
+<!-- TOC -->
+
+- [Motivation](#motivation)
+- [Vorschau](#vorschau)
+- [Wie funktioniert's?](#wie-funktionierts)
+- [Installation](#installation)
+- [Feedback](#bei-problemenvorschlägen)
+
+<!-- /TOC -->
 
 ## Motivation
 Ich bin jemand, der gerne Abends im Bett und vor dem Schlafen Pietsmiet-Videos schaut. Dabei wurden mir von hellen Website-Gestaltung regelmäßig die Augen ausgebrannt. **Deshalb** habe ich dieses Projekt gestartet, das der pietsmiet.de-Seite einen augenschonenden, dunklen Anstrich verpasst.
@@ -18,7 +28,7 @@ Ein weiterer klick macht dies rückgängig.
 Das dunkle Theme bleibt auch aktiv, wenn ihr euren Browser neustartet.
 
 ## Installation
-**INFO:** Die Erweiterung wird NICHT im Addon-Store von Chrome erscheinen. Das kostet mich eine Entwickler-Gebühr.
+**INFO:** Die Erweiterung wird NICHT im Addon-Store von Chrome erscheinen, da ich dafür eine Kreditkarte bräuchte.
 
 1. Release-Seite von diesem Repository aufrufen
 ![Download](.github/darken_ps_inst_1.png)

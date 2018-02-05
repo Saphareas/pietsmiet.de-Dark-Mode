@@ -1,9 +1,19 @@
 const MAIN_CSS = browser.runtime.getURL("darken_ps.css"); //Voll-qualifizierter Pfad zur "dunklen" CSS-Datei
 const POD_CSS = browser.runtime.getURL("darken_podcast.css"); //Voll-qualifizierter Pfad zur "dunklen" CSS-Datei für de Podcast-Seite
-var firstLoad = true;
+var isFirstLoad = true;
 
-function _podcastHelper(iFrame, element) {
-    iFrame.contentWindow.document.getElementsByTagName("head")[0].appendChild(element);
+function _podcastHelper() {
+    var title = document.getElementsByTagName("title")[0].innerText;
+    if (title.includes("Podcast")) {
+        window.addEventListener("load", function() {_podcastHelper(element2);});
+        var element2 = document.createElement("link");
+        element2.setAttribute("id", "darkmode"); //id, um es später wieder zu finden
+        element2.setAttribute("rel", "stylesheet");
+        element2.setAttribute("type", "text/css");
+        element2.setAttribute("href", POD_CSS);
+        var iFrame = document.getElementById("blockrandom");
+        iFrame.contentWindow.document.getElementsByTagName("html")[0].appendChild(element2);
+    }
 }
 
 function onToggleMode(request, sender) {
@@ -13,32 +23,24 @@ function onToggleMode(request, sender) {
         element.setAttribute("rel", "stylesheet");
         element.setAttribute("type", "text/css");
         element.setAttribute("href", MAIN_CSS);
-
         document.getElementsByTagName("head")[0].appendChild(element); //hänge an den Head an
-
-        hasIFrame = document.getElementsByTagName("iframe")[0];
-        if (hasIFrame) {
-            var element2 = document.createElement("link");
-            element2.setAttribute("id", "darkmode"); //id, um es später wieder zu finden
-            element2.setAttribute("rel", "stylesheet");
-            element2.setAttribute("type", "text/css");
-            element2.setAttribute("href",POD_CSS);
-            hasIFrame.addEventListener("load", _podcastHelper(hasIFrame, element2));
-            if (firstLoad) {
-                firstLoad = false;
-            } else {
-                _podcastHelper(hasIFrame, element2);
-            }
+        if (isFirstLoad) {
+            window.addEventListener("load", function() {_podcastHelper();});
+            isFirstLoad = false;
+        } else {
+            _podcastHelper();
         }
 
         browser.storage.local.set({isDark: true});
     } else { //also wenn auf normal gewechselt werden soll
-
         document.getElementById("darkmode").remove(); //entferne vorher erstelltes link-Element aus DOM
 
-        hasIFrame = document.getElementsByTagName("iframe")[0]
-        if (hasIFrame) {
-            hasIFrame.contentWindow.document.getElementById("darkmode").remove();
+        var title = document.getElementsByTagName("title")[0].innerText;
+        if (title.includes("Podcast")) {
+            hasIFrame = document.getElementsByClassName("contentpane")[0].children[0];
+            if (hasIFrame) {
+                hasIFrame.contentWindow.document.getElementById("darkmode").remove();
+            }
         }
 
         browser.storage.local.set({isDark: false});
@@ -49,7 +51,11 @@ browser.runtime.sendMessage("show the damn icon"); // Sende irgendwas zum Backgr
 browser.runtime.onMessage.addListener(onToggleMode); //Sobald das Content-Script eine Message erhält, onToggleMode ausführen
 
 // Antworten-Button Fix
-var comments = document.getElementsByClassName("comment-body");
-for (i=0; i < comments.length; i++) {
-    commBodies[i].parentNode.children[2].setAttribute("class","comments-buttons");
-}
+window.addEventListener("load", function() { //läuft, wenn die Seite geladen wurde
+    setTimeout(function() { //1 sec Delay, weil Kommentare erst nachträglich geladen werden
+        var comments = document.getElementsByClassName("comment-body");
+        for (i=0; i < comments.length; i++) {
+            comments[i].parentNode.children[2].setAttribute("class","comments-buttons");
+        }
+    }, 1000);
+});
