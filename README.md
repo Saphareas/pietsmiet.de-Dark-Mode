@@ -8,7 +8,11 @@
 - [Vorschau](#vorschau)
 - [Wie funktioniert's?](#wie-funktionierts)
 - [Installation](#installation)
-- [Feedback](#bei-problemenvorschlägen)
+    - [Aus den Web Stores](#aus-den-web-stores)
+    - [Manuell](#manuell)
+        - [Chrome](#chrome)
+        - [Firefox](#firefox)
+- [Bei Problemen/Vorschlägen](#bei-problemenvorschlägen)
 
 <!-- /TOC -->
 
@@ -28,31 +32,29 @@ Ein weiterer klick macht dies rückgängig.
 Das dunkle Theme bleibt auch aktiv, wenn ihr euren Browser neustartet.
 
 ## Installation
+### Aus den Web Stores
 **INFO:** Die Erweiterung wird NICHT im Addon-Store von Chrome erscheinen, da ich dafür eine Kreditkarte bräuchte.
+[![Firefox](.github/firefox-logo.png)](https://addons.mozilla.org/de/firefox/addon/pietsmiet-de-dark-mode/)
 
-1. Release-Seite von diesem Repository aufrufen
-![Download](.github/darken_ps_inst_1.png)
-2. Entsprechende Version auswählen und runterladen
-![Select Version](.github/darken_ps_inst_2.png)
-
-#### Chrome
-3. Runtergeladene Zip-Datei in Ordner entpacken
+### Manuell
+#### Chrome ![Chrome](.github/chrome-logo-small.png)
+(und Chromium-basierte, wie Opera oder Vivaldi)
+1. Erweiterung [hier herunterladen](https://github.com/Saphareas/pietsmiet.de-Dark-Mode/releases)
+2. Runtergeladene Zip-Datei in Ordner entpacken
 ![Unzip](.github/darken_ps_inst_ch_3.png)
-4. In Chrome die _Erweiterungen_-Seite aufrufen
+3. In Chrome die _Erweiterungen_-Seite aufrufen
 ![Addon-Page](.github/darken_ps_inst_ch_4.png)
-5. Entwicklermodus anschalten und die Erweiterung laden (den Ordner, in den ihr die Zip entpackt habt)
+4. Entwicklermodus anschalten und die Erweiterung laden (den Ordner, in den ihr die Zip entpackt habt)
 ![Load Addon](.github/darken_ps_inst_ch_5.png)
 
-#### Firefox
-3. Die Erweiterungs-Datei sollte automatisch vom Firefox geöffnet werden. Einfach den Anweisungen folgen.
+#### Firefox ![Firefox](.github/firefox-logo-small.png)
+1. Erweiterung [hier herunterladen](https://github.com/Saphareas/pietsmiet.de-Dark-Mode/releases)
+2. Die Erweiterungs-Datei sollte automatisch vom Firefox geöffnet werden. Einfach den Anweisungen folgen.
 ![Allow](.github/darken_ps_inst_ff_3.png)
 ![Install](.github/darken_ps_inst_ff_4.png)
 
 ## Bei Problemen/Vorschlägen
-Einfach [hier](https://github.com/Saphareas/pietsmiet.de-Dark-Mode/issues) auf Github (im Reiter _Issues_) einen entsprechenden Thread öffnen. Wer weiß, was er/sie macht, kann natürlich auch dieses Ropository forken und eine Pull-Request senden.
-
-#### Info für den Webmaster von pietsmiet.de
-Bei den "Antworten"-Buttons unter den Kommentaren ist im HTML-Code ein Fehler. Dort steht bei ```<span cass="comments-buttons">``` eben "cass" statt "class" in den Element-Properties. Ich habe dafür in dieser Erweiterung einen Fix eingebaut.
+Einfach [hier auf Github](https://github.com/Saphareas/pietsmiet.de-Dark-Mode/issues) (im Reiter _Issues_) einen entsprechenden Thread öffnen. Wer weiß, was er/sie macht, kann natürlich auch dieses Ropository forken und eine Pull-Request senden.
 
 _Einige Dateien in diesem Repository stehen unter einer angepassten **Beer-ware** Lizenz. (siehe Header in entsprechenden Dateien)
 Die Rechte in den Bildern liegen bei Pietsmiet._
