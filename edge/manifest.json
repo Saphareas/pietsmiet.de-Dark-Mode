@@ -12,17 +12,11 @@
     "96": "icons/icon-96.png"
   },
 
-  "applications": {
-    "gecko": {
-      "id": "{af4fc8a6-ed40-488f-bd74-417b3906f78f}",
-      "strict_min_version": "52.0"
-    }
-  },
-
   "content_scripts": [
     {
       "matches": ["*://*.pietsmiet.de/*"],
-      "js": ["content.js"]
+      "js": ["content.js"],
+      "run_at": "document_start"
     }
   ],
 

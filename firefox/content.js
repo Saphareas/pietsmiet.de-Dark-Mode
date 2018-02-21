@@ -23,7 +23,7 @@ function onToggleMode(request, sender) {
         element.setAttribute("rel", "stylesheet");
         element.setAttribute("type", "text/css");
         element.setAttribute("href", MAIN_CSS);
-        document.getElementsByTagName("head")[0].appendChild(element); //hänge an den Head an
+        document.getElementsByTagName("html")[0].appendChild(element); //hänge an den Head an
         if (isFirstLoad) {
             window.addEventListener("load", function() {_podcastHelper();});
             isFirstLoad = false;
