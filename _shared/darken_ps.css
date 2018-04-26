@@ -1,6 +1,7 @@
 /* Hintergrund und Textfarbe der Hauptseite */
 body,
-iframe {
+iframe,
+.well {
     background: #111111 !important;
     color: #fff !important;
 }
@@ -59,4 +60,21 @@ h5 a:visited {
 hr {
     border-top: 1px solid #111111 !important;
     border-bottom: 1px solid #242424 !important;
+}
+
+/* Playlist-Ansicht */
+.media-list-view .table-striped tr:nth-child(odd)>td {
+    background: #111111 !important;
+    border-top-color: #111111 !important;
+}
+.media-list-view .table-striped tr:nth-child(even)>td {
+    background: #242424 !important;
+    border-top-color: #242424 !important;
+}
+
+/* Profile bearbeiten-Seite */
+.profile-edit form,
+.profile-edit legend {
+    background: #242424 !important;
+    color: white !important;
 }
