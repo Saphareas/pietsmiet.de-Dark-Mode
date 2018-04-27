@@ -9,7 +9,7 @@
     - [Aus den Web Stores](#aus-den-web-stores)
     - [Manuell](#manuell)
         - [Chrome](#chrome)
-        - [Firefox](#firefox)
+        - [Edge](#edge)
 - [Bei Problemen/Vorschlägen](#bei-problemenvorschlägen)
 
 <!-- /TOC -->
@@ -45,13 +45,7 @@ Das dunkle Theme bleibt auch aktiv, wenn ihr euren Browser neustartet.
 4. Entwicklermodus anschalten und die Erweiterung laden (den Ordner, in den ihr die Zip entpackt habt)
 ![Load Addon](.github/darken_ps_inst_ch_5.png)
 
-#### Firefox ![Firefox](.github/firefox-logo-small.png)
-1. Erweiterung [hier herunterladen](https://github.com/Saphareas/pietsmiet.de-Dark-Mode/releases)
-2. Die Erweiterungs-Datei sollte automatisch vom Firefox geöffnet werden. Einfach den Anweisungen folgen.
-![Allow](.github/darken_ps_inst_ff_3.png)
-![Install](.github/darken_ps_inst_ff_4.png)
-
-#### Edge
+#### Edge ![Edge](.github/edge-logo-small.png)
 3. Runtergeladene Zip-Datei in Ordner entpacken
 ![Unzip](.github/darken_ps_inst_ie_3.png)
 4. In Edge die _Flags_-Seite aufrufen und den Entwicklermodus anschalten
