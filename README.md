@@ -1,5 +1,3 @@
-<a href="https://vivaldi.com?pk_campaign=Banners&pk_kwd=i_use_105x20"><img src="https://vivaldi.com/buttons/files/i_use_105x20.png" alt="Download Vivaldi Web Browser Today!" style="border:0"></a>
-
 # Pietsmiet Dark Mode
 
 <!-- TOC -->
@@ -48,14 +46,18 @@ Das dunkle Theme bleibt auch aktiv, wenn ihr euren Browser neustartet.
 ![Allow](.github/darken_ps_inst_ff_3.png)
 ![Install](.github/darken_ps_inst_ff_4.png)
 
+#### Edge
+3. Runtergeladene Zip-Datei in Ordner entpacken
+![Unzip](.github/darken_ps_inst_ie_3.png)
+4. In Edge die _Flags_-Seite aufrufen und den Entwicklermodus anschalten
+![Addon-Page](.github/darken_ps_inst_ie_4.png)
+5. Erweiterungsmenü öffnen...
+![Load Addon](.github/darken_ps_inst_ie_5.png)
+...und die Erweiterung laden (den Ordner, in den ihr die Zip entpackt habt)
+![Load Addon](.github/darken_ps_inst_ie_6.png)
+
 ## Bei Problemen/Vorschlägen
 Einfach [hier](https://github.com/Saphareas/pietsmiet.de-Dark-Mode/issues) auf Github (im Reiter _Issues_) einen entsprechenden Thread öffnen. Wer weiß, was er/sie macht, kann natürlich auch dieses Ropository forken und eine Pull-Request senden.
 
-#### Info für den Webmaster von pietsmiet.de
-Bei den "Antworten"-Buttons unter den Kommentaren ist im HTML-Code ein Fehler. Dort steht bei ```<span cass="comments-buttons">``` eben "cass" statt "class" in den Element-Properties. Ich habe dafür in dieser Erweiterung einen Fix eingebaut.
-
-_Einige Dateien in diesem Repository stehen unter einer angepassten **Beer-ware** Lizenz. (siehe Header in entsprechenden Dateien)
-Die Rechte in den Bildern liegen bei Pietsmiet._
-
-_Some files in this repository are licensed under a customized version of the **Beer-ware** License. (see Header of the affected files)
-The copyrights for the images are  owned by Pietsmiet._
+_Die Rechte in den Bildern liegen bei Pietsmiet._
+_The copyrights for the images are  owned by Pietsmiet._
