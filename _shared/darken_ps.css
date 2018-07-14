@@ -72,9 +72,10 @@ hr {
     border-top-color: #242424 !important;
 }
 
-/* Profile bearbeiten-Seite */
+/* Profil bearbeiten-Seite */
 .profile-edit form,
-.profile-edit legend {
+.profile-edit legend,
+.profile legend {
     background: #242424 !important;
     color: white !important;
 }
