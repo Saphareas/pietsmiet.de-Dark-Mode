@@ -7,69 +7,44 @@ iframe,
 }
 
 /* Hintergrund und Textfarbe des Video-Containers */
-.main .container,
-.pagenav {
+main.container {
     background: #242424 !important;
     color: #fff !important;
 }
-a.pagenav {
-    color: #0b8043 !important;
-}
 
-/* Textfarbe für alle Überschriften */
-h1,
-h2,
-h3,
-h4,
-h5 {
+/* Farben der Navigations-Flyouts */
+div.dropdown, div.dropdown > div {
+    background: #007743 !important;
     color: #fff !important;
 }
 
-/* Textfarbe für alle Überschriften-Links... */
-h1 a:link,
-h2 a:link,
-h3 a:link,
-h4 a:link,
-h5 a:link {
+/* Farben der Popups (z.B. Datenschutz-Infos) */
+.modal,
+.modal-header,
+.modal-body,
+.modal-footer {
+    background: #242424 !important;
     color: #fff !important;
 }
+.modal-footer > .button-secondary {
+    background: darkred;
+}
 
-/* ...auch die bereits besuchten */
-h1 a:visited,
-h2 a:visited,
-h3 a:visited,
-h4 a:visited,
-h5 a:visited {
-    color: #fff !important;
+/* Breadcrumbs */
+ol.list-reset > div.mr-3 {
+    color: white;
+}
+ol.list-reset > li.mr-3.active {
+    color: white;
+    text-decoration: underline;
 }
 
 /* Explizit Textfarbe für... */
-.latestnews-headline, /* Newsüberschriften */
-.ob-rec-text, /* Anzeigenüberschriften */
-.breadcrumb li.active, /* aktives Breadcrumb */
-.comment-body /* Kommentare */ {
+.media * /* Titel+Text unter Thumbnails */ {
     color: #fff !important;
 }
-
-/* Breadcrumbs etwas dunkler/grauer */
-.breadcrumb a {
-     color: #999 !important;
-}
-
-/* Break-Farbe von Beige auf Weiß zu Schwarz auf Grau */
-hr {
-    border-top: 1px solid #111111 !important;
-    border-bottom: 1px solid #242424 !important;
-}
-
-/* Playlist-Ansicht */
-.media-list-view .table-striped tr:nth-child(odd)>td {
-    background: #111111 !important;
-    border-top-color: #111111 !important;
-}
-.media-list-view .table-striped tr:nth-child(even)>td {
-    background: #242424 !important;
-    border-top-color: #242424 !important;
+.text-muted /* Untertext unter Artikeln */ {
+    color: rgba(255, 255, 255, 0.6);
 }
 
 /* Profil bearbeiten-Seite */
