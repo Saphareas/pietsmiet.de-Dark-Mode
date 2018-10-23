@@ -44,13 +44,9 @@ Für die Veröffentlichung der Edge-Version im Microsoft Store habe ich mich sch
 #### Chrome ![Chrome](.github/chrome-logo-small.png)
 (und Chromium-basierte, wie Opera oder Vivaldi)
 
-1. Erweiterung [hier herunterladen](https://github.com/Saphareas/pietsmiet.de-Dark-Mode/releases)
-2. Runtergeladene Zip-Datei in Ordner entpacken
-![Unzip](.github/darken_ps_inst_ch_3.png)
-3. In Chrome die _Erweiterungen_-Seite aufrufen
-![Addon-Page](.github/darken_ps_inst_ch_4.png)
-4. Entwicklermodus anschalten und die Erweiterung laden (den Ordner, in den ihr die Zip entpackt habt)
-![Load Addon](.github/darken_ps_inst_ch_5.png)
+1. Erweiterung (.crx-Datei) [hier herunterladen](https://github.com/Saphareas/pietsmiet.de-Dark-Mode/releases/latest)
+2. In Chrome die _Erweiterungen_-Seite aufrufen
+3. Entwicklermodus anschalten, dann die Seite neu laden und die runtergeladene Datei aus deinem Downloads-Ordner in den Browser ziehen.
 
 #### Edge ![Edge](.github/edge-logo-small.png)
 
