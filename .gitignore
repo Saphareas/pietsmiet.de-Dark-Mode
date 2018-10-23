@@ -2,6 +2,7 @@ desktop.ini
 icons/action.xcf
 TODO.txt
 .releases
+releases/*
 *.zip
 ps-dark-*
 */desktop\.ini
