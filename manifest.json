@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Pietsmiet.de Dark Mode",
-  "version": "17.5.1",
+  "version": "17.10",
   "author": "Fabian Große/Saphareas",
   "homepage_url": "https://github.com/Saphareas/pietsmiet.de-Dark-Mode",
 
@@ -14,6 +14,12 @@
     "90": "icons/icon-90.png",
     "120": "icons/icon-120.png"
   },
+
+  "content_scripts": [{
+    "matches": ["*://*.pietsmiet.de/*"],
+    "js": ["content.js"],
+    "run_at": "document_start"
+  }],
 
   "background": {
       "scripts": ["background.js"],
@@ -29,14 +35,10 @@
   },
 
   "permissions": [
-    "*://*.pietsmiet.de/*",
     "tabs",
     "storage"
   ],
 
-  "web_accessible_resources": [
-      "darken_ps.css",
-      "darken_podcast.css"
-  ]
+  "web_accessible_resources": ["darken_ps.css"]
 
 }

@@ -1,19 +1,11 @@
 if (typeof browser == "undefined") {
     var browser = chrome;
 }
-const MAIN_CSS = browser.runtime.getURL("darken_ps.css"); //Voll-qualifizierter Pfad zur "dunklen" CSS-Datei
-const POD_CSS = browser.runtime.getURL("darken_podcast.css"); //Voll-qualifizierter Pfad zur "dunklen" CSS-Datei für de Podcast-Seite
 
 function updateTheme(tab) {
-    let details = {
-        allFrames: true,
-        file: "/darken_ps.css",
-        cssOrigin: "user",
-        runAt: "document_start"
-    }
     browser.storage.local.get(null, (item) => {
         if (item.isDark === true) {
-            browser.tabs.insertCSS(tab.id, details);
+            browser.tabs.sendMessage(tab.id, {isDark:true})
             browser.pageAction.setIcon({
                 tabId: tab.id,
                 path: {
@@ -23,10 +15,13 @@ function updateTheme(tab) {
             });
         }
         else {
-            browser.tabs.removeCSS(tab.id, details);
+            browser.tabs.sendMessage(tab.id, {isDark:false})
             browser.pageAction.setIcon({
                 tabId: tab.id,
-                path: null
+                path: {
+                    19: "icons/action-off-19.png",
+                    38: "icons/action-off-38.png"
+                }
             });
         }
     });
