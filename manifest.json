@@ -9,35 +9,33 @@
 
   "icons": {
     "48": "icons/icon-48.png",
-    "96": "icons/icon-96.png"
-  },
-
-  "applications": {
-    "gecko": {
-      "id": "{af4fc8a6-ed40-488f-bd74-417b3906f78f}",
-      "strict_min_version": "52.0"
-    }
+    "96": "icons/icon-96.png",
+    "54": "icons/icon-54.png",
+    "90": "icons/icon-90.png",
+    "120": "icons/icon-120.png"
   },
 
   "content_scripts": [
     {
       "matches": ["*://*.pietsmiet.de/*"],
+      "all_frames": true,
       "js": ["content.js"],
       "run_at": "document_start"
     }
   ],
 
   "background": {
-      "scripts": ["background.js"]
+      "scripts": ["background.js"],
+      "persistent": true
     },
 
   "page_action": {
-    "browser_style": true,
     "default_icon": {
         "19": "icons/action-off-19.png",
         "38": "icons/action-off-38.png"
     },
-    "default_title": "Abdunkeln"
+    "default_title": "Abdunkeln",
+    "show_matches": ["*://*.pietsmiet.de/*"]
   },
 
   "permissions": [

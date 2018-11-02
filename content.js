@@ -1,6 +1,10 @@
-const MAIN_CSS = chrome.runtime.getURL("darken_ps.css"); //Voll-qualifizierter Pfad zur "dunklen" CSS-Datei
-const POD_CSS = chrome.runtime.getURL("darken_podcast.css"); //Voll-qualifizierter Pfad zur "dunklen" CSS-Datei für de Podcast-Seite
+const MAIN_CSS = browser.runtime.getURL("darken_ps.css"); //Voll-qualifizierter Pfad zur "dunklen" CSS-Datei
+const POD_CSS = browser.runtime.getURL("darken_podcast.css"); //Voll-qualifizierter Pfad zur "dunklen" CSS-Datei für de Podcast-Seite
 var isFirstLoad = true;
+
+if (typeof browser == "undefined") {
+    var browser = chrome;
+}
 
 function _podcastHelper() {
     var title = document.getElementsByClassName("mr-3 active")[0].innerText;
@@ -31,7 +35,7 @@ function onToggleMode(request, sender) {
         } else {
             _podcastHelper();
         }
-        chrome.storage.local.set({isDark: true});
+        browser.storage.local.set({isDark: true});
     }
     else { //also wenn auf normal gewechselt werden soll
         document.getElementById("darkmode").remove(); //entferne vorher erstelltes link-Element aus DOM
@@ -41,9 +45,9 @@ function onToggleMode(request, sender) {
             iFrame.contentWindow.document.getElementById("darkmode").remove();
             console.log("Podcast lightend");
         }
-        chrome.storage.local.set({isDark: false});
+        browser.storage.local.set({isDark: false});
     }
 }
 
-chrome.runtime.sendMessage("show the damn icon"); // Sende irgendwas zum Background, um dort die TabID zu haben
-chrome.runtime.onMessage.addListener(onToggleMode); //Sobald das Content-Script eine Message erhält, onToggleMode ausführen
+browser.runtime.sendMessage("show the damn icon"); // Sende irgendwas zum Background, um dort die TabID zu haben
+browser.runtime.onMessage.addListener(onToggleMode); //Sobald das Content-Script eine Message erhält, onToggleMode ausführen

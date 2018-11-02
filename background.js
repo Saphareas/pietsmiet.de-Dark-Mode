@@ -1,5 +1,9 @@
 var tabID; //global ist nicht schön
 
+if (typeof browser == "undefined") {
+    var browser = chrome;
+}
+
 function init() {
     var getStorage = browser.storage.local.get(null,
         function getStorageCallback(items){
