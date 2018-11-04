@@ -1,16 +1,23 @@
 :root {
     --background-dark: #242424;
     --background-darker: #111111;
-    --pietsmiet-green: #007743;
+    --pietsmiet-green-dark: #007734;
+}
+
+#creativeAdWrapper {
+    filter: brightness(0);
 }
 
 body, #app {
     background: var(--background-darker) !important;
 }
 main.container,
-.dropdown,
 .bg-white {
     background: var(--background-dark) !important;
+    color: white !important;
+}
+.dropdown .bg-white {
+    background: var(--pietsmiet-green-dark) !important;
     color: white !important;
 }
 

@@ -4,16 +4,16 @@ if (typeof browser == "undefined") {
 
 function handleMessage(msg) {
     let head = document.head;
-    if (msg.isDark === true) {
-        let style = document.createElement("link");
+    let style = document.getElementById("darken-ps");
+    if (msg.isDark === true && !style) {
+        style = document.createElement("link");
         style.href = browser.runtime.getURL("darken_ps.css");
         style.rel = "stylesheet";
         style.id = "darken-ps";
         head.append(style);
     }
-    else {
-        let style = document.getElementById("darken-ps");
-        head.removeChild(style);
+    else if (msg.isDark === false) {
+        style.remove();
     }
 }
 
