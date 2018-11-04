@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    :root {
+      --background-dark: #242424;
+      --background-darker: #111111;
+      --pietsmiet-green: #007734;
+    }
+    body { margin: 0; font-family: sans-serif; }
+    main { height: 100vh; }
+    .grid {
+      display: grid;
+      grid-template-areas:
+        "header header header header"
+        ". main img ."
+        ". usage img ."
+        "footer footer footer footer";
+      grid-template-rows: 60px auto 1fr 60px;
+      grid-template-columns: minmax(20px, 5vw) 1fr minmax(200px, 1fr) minmax(20px, 5vw);
+    }
+    header, footer {
+      background: var(--pietsmiet-green);
+      padding: 0 5vw;
+      color: white;
+    }
+  </style>
+  <script src="onboarding-page.js"></script>
+  <title>MORREU!</title>
+</head>
+
+<body>
+  <main class="grid">
+    <header style="grid-area: header">
+      <h1>Pietsmiet.de Dark Mode</h1>
+    </header>
+    <section style="grid-area: main">
+      <h1>MORREU!</h1>
+      <p>
+        Du hast "Pietsmiet.de Dark Mode" installiert. Wenn dir diese Erweiterung gefällt, gib ihr doch bitte eine positive Bewertung¹. Wenn nicht, sag mir doch einfach, warum.
+      </p>
+    </section>
+
+    <section style="grid-area: usage">
+      <h3>Anleitung</h3>
+      <p>Nachdem du die Erweiterung installiert hast, erscheint immer dieser Button, wenn du auf Pietsmiet.de unterwegs bist. Einfach draufklicken, und schon wechselt das Theme der Seite.
+        (Du kannst das mit dem Bild rechts testen.)
+      </p>
+    </section>
+
+    <aside style="grid-area: img; padding: 16px;">
+        <a id="bla" href="javascript:void(0)"><img src="before.jpeg" alt="hier Bild und so" width="100%"/></a>
+    </aside>
+    <footer style="grid-area: footer">
+      <p>¹Wenn dir diese Erweiterung wirklich richtig gut gefällt, wäre ich für eine kleine Spende dankbar:  <a href="paypal.me/saphareas">♥ Hier spenden</a></p>
+    </footer>
+  </main>
+</body>
+</html>
