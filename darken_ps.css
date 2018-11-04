@@ -1,0 +1,38 @@
+:root {
+    --background-dark: #242424;
+    --background-darker: #111111;
+    --pietsmiet-green-dark: #007734;
+}
+
+#creativeAdWrapper {
+    filter: brightness(0);
+}
+
+body, #app {
+    background: var(--background-darker) !important;
+}
+main.container,
+.bg-white {
+    background: var(--background-dark) !important;
+    color: white !important;
+}
+.dropdown .bg-white {
+    background: var(--pietsmiet-green-dark) !important;
+    color: white !important;
+}
+
+.text-smoke {
+    color: lightgray !important;
+}
+.text-smoke-darker{
+    color: darkgray !important;
+}
+
+.collapse .more,
+.ob-widget-section .ob-widget-header {
+    color: gray !important;
+}
+.item.disabled,
+.text-muted {
+    color: dimgray !important;
+}
