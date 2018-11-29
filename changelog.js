@@ -8,8 +8,7 @@ function handleOnInstalled(details) {
             type: "basic",
             title: `Version ${manifest.version} Changelog`,
             message: `${manifest.name} wurde aktualisiert. Das hat sich geändert:
-• Alles wurde komplett neu geschrieben, d.h. alle alten Bugs wurden behoben und (hoffentlich bessere Performance)
-• Diese Benachrichtigung wurde eingeführt`,
+• Ein paar kleinere Style-Anpassungen, z.B. helle Input-Felder`,
             iconUrl: "icons/icon-48.png"
         };
         browser.notifications.create(notificationOptions);

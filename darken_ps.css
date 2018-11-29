@@ -12,7 +12,8 @@ body, #app {
     background: var(--background-darker) !important;
 }
 main.container,
-.bg-white {
+.bg-white,
+#cookie-consent-flexible {
     background: var(--background-dark) !important;
     color: white !important;
 }
@@ -35,4 +36,14 @@ main.container,
 .item.disabled,
 .text-muted {
     color: dimgray !important;
+}
+a.hover\:bg-grey-lightest:hover {
+    color: var(--background-dark);
+}
+[id^='comment'] h4 span.text-grey-darkest {
+    color: var(--pietsmiet-green-dark);
+}
+.input:not([placeholder="Suchbegriff"]),
+.select select {
+    background-color: whitesmoke !important;
 }

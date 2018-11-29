@@ -2,15 +2,15 @@
 
 <!-- TOC -->
 
-- [Pietsmiet Dark Mode](#pietsmiet-dark-mode)
-  - [Motivation](#motivation)
-  - [Vorschau](#vorschau)
-  - [Wie funktioniert's?](#wie-funktionierts)
-  - [Installation](#installation)
-    - [Manuell](#manuell)
-      - [Chrome ![Chrome](.github/chrome-logo-small.png)](#chrome-chromegithubchrome-logo-smallpng)
-      - [Edge ![Edge](.github/edge-logo-small.png)](#edge-edgegithubedge-logo-smallpng)
-  - [Bei Problemen/Vorschlägen](#bei-problemenvorschlägen)
+- [Motivation](#motivation)
+- [Vorschau](#vorschau)
+- [Wie funktioniert's?](#wie-funktionierts)
+- [Installation](#installation)
+- [Manuell](#manuell)
+    - [Chrome ![Chrome](.github/chrome-logo-small.png)](#chrome-chromegithubchrome-logo-smallpng)
+    - [Edge ![Edge](.github/edge-logo-small.png)](#edge-edgegithubedge-logo-smallpng)
+- [Bei Problemen/Vorschlägen](#bei-problemenvorschlägen)
+- [Lizenz](#lizenz)
 
 <!-- /TOC -->
 
@@ -67,5 +67,4 @@ Einfach [hier auf Github](https://github.com/Saphareas/pietsmiet.de-Dark-Mode/is
 
 Sämtlicher Code in diesem Repository unterliegt der beiliegenden [MIT-Lizenz](LICENSE). Für eine Zusammenfassung der Lizenz siehe https://www.tldrlegal.com/l/mit.
 
-_Die Rechte in den Bildern liegen bei Pietsmiet._
-_The copyrights for the images are owned by Pietsmiet._
+_PietSmiet, PietSmittie, Br4mm3n, der PietSmiet Controller und das PietSmiet Logo sind eingetragene Marken der PietSmiet UG (haftungsbeschränkt) & Co. KG_
