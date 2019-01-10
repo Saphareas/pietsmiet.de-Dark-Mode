@@ -5,10 +5,7 @@
 - [Motivation](#motivation)
 - [Vorschau](#vorschau)
 - [Wie funktioniert's?](#wie-funktionierts)
-- [Installation](#installation)
-- [Manuell](#manuell)
-    - [Chrome ![Chrome](.github/chrome-logo-small.png)](#chrome-chromegithubchrome-logo-smallpng)
-    - [Edge ![Edge](.github/edge-logo-small.png)](#edge-edgegithubedge-logo-smallpng)
+- [Installation](#installation)   
 - [Bei Problemen/Vorschlägen](#bei-problemenvorschlägen)
 - [Lizenz](#lizenz)
 
@@ -37,18 +34,9 @@ Das dunkle Theme bleibt auch aktiv, wenn ihr euren Browser neustartet.
 **INFO:**
 Die Erweiterung wird vorerst NICHT im Addon-Store von Chrome erscheinen, da ich dafür eine Kreditkarte bräuchte.
 Für die Veröffentlichung der Edge-Version im Microsoft Store habe ich mich schon beworben. Es ist nur noch eine Frage der Zeit.<br>
-[![Firefox](.github/firefox-logo.png)](https://addons.mozilla.org/de/firefox/addon/pietsmiet-de-dark-mode/)
-<br><br>
-[!Der Style ist jetzt auch für Stylish-Nutzer verfügbar!](https://userstyles.org/styles/167688/pietsmiet-de-dark-mode)
-
-### Manuell
-
-#### Chrome ![Chrome](.github/chrome-logo-small.png)
-(und Chromium-basierte, wie Opera oder Vivaldi)
-
-1. Erweiterung (.crx-Datei) [hier herunterladen](https://github.com/Saphareas/pietsmiet.de-Dark-Mode/releases/latest)
-2. In Chrome die _Erweiterungen_-Seite aufrufen
-3. Entwicklermodus anschalten, dann die Seite neu laden und die runtergeladene Datei aus deinem Downloads-Ordner in den Browser ziehen.
+[![Firefox](.github/firefox-logo.png)](https://addons.mozilla.org/de/firefox/addon/pietsmiet-de-dark-mode/) | [![Chrome](.github/chrome-logo.png)](https://userstyles.org/styles/167688/pietsmiet-de-dark-mode)
+------------ | -------------
+Klicke auf das Logo | Klicke auf das Logo <br> _(Nur als Style für Stylish)_
 
 #### Edge ![Edge](.github/edge-logo-small.png)
 
