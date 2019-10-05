@@ -5,51 +5,87 @@
  */
 
 :root {
+    --background-lighter: #373737;
     --background-dark: #242424;
     --background-darker: #111111;
-    --pietsmiet-green-dark: #007734;
+    --pietsmiet-green-light: #28cc70;
+    --pietsmiet-green-dark: #007734;    
+    --pietsmiet-grey: #3d4852;	
 }
 
-#creativeAdWrapper {
-    filter: brightness(0);
-}
-
+/* Gesamte Seite (outer) */
 body, #app {
-    background: var(--background-darker) !important;
+    background: var(--background-darker);
 }
+/* Gesamte Seite (inner) */
 main.container,
-.bg-white,
-#cookie-consent-flexible {
-    background: var(--background-dark) !important;
-    color: white !important;
-}
-.dropdown .bg-white {
-    background: var(--pietsmiet-green-dark) !important;
-    color: white !important;
+.bg-white {
+    background: var(--background-dark);
+    color: white;
 }
 
-.text-smoke {
-    color: lightgray !important;
+/* Nav Dropdowns */
+nav .dropdown-item .dropdown-menu .dropdown-menu-content,
+.bg-grey-lighter {
+  background-color: var(--background-lighter);
 }
-.text-smoke-darker{
-    color: darkgray !important;
+.text-ps-dark {
+  color: var(--pietsmiet-green-light);
+}
+.hover\:text-ps-darker:hover {
+    color: whitesmoke;
 }
 
-.collapse .more,
-.ob-widget-section .ob-widget-header {
-    color: gray !important;
+/* Content Cards für Videos etc. */
+.media--description {
+  background-color: var(--background-lighter);
 }
-.item.disabled,
-.text-muted {
-    color: dimgray !important;
-}
-a.hover\:bg-grey-lightest:hover {
-    color: var(--background-dark);
-}
-[id^='comment'] h4 span.text-grey-darkest {
-    color: var(--pietsmiet-green-dark);
-}
+
+/* Kommentieren-Text Area */
 .input:not([placeholder="Suchbegriff"]),
 .select select {
-    background-color: whitesmoke !important;
+    border-color: whitesmoke;
+    color: whitesmoke;
 }
+
+/* Kommentieren-Button */
+.button.button-primary.button-basic {
+  border-color: transparent;
+  color: whitesmoke;
+}
+.button.button-basic {
+  background-color: var(--pietsmiet-green-dark);
+}
+.button.button-basic:hover {
+  background-color: var(--pietsmiet-green-light);
+}
+
+/* Kommentarbereich Usernamen */
+[id^='comment'] .font-semibold.text-grey-darkest a {
+    color: whitesmoke;
+}
+/* Special Case für Snobs */
+.text-blue-dark,
+.text-blue {
+    color: var(--pietsmiet-green-light) !important;
+}
+.border-blue-dark,
+.border-blue {
+    border-color: var(--pietsmiet-green-light) !important;
+}
+
+/* Ad-Block */
+.vue {
+    display: none;
+}
+
+/* DSGVO Modal */
+.modal,
+.modal .modal-footer {
+  background-color: var(--pietsmiet-grey);
+  color: white;
+}
+.modal .ion {
+  fill: black;
+}
+
