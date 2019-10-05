@@ -22,20 +22,11 @@
   }],
 
   "background": {
-      "scripts": [
-        "background.js",
+      "scripts": [        
         "changelog.js"
       ],
       "persistent": true
     },
-
-  "page_action": {
-    "default_icon": {
-        "19": "icons/action-off-19.png",
-        "38": "icons/action-off-38.png"
-    },
-    "default_title": "Theme umschalten"
-  },
 
   "permissions": [
     "tabs",
@@ -46,3 +37,4 @@
   "web_accessible_resources": ["darken_ps.css"]
 
 }
+

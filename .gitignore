@@ -5,3 +5,5 @@ releases/*
 *.zip
 ps-dark-*
 */desktop\.ini
+.directory
+*.old
