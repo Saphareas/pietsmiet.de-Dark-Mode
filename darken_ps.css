@@ -9,8 +9,8 @@
     --background-dark: #242424;
     --background-darker: #111111;
     --pietsmiet-green-light: #28cc70;
-    --pietsmiet-green-dark: #007734;    
-    --pietsmiet-grey: #3d4852;	
+    --pietsmiet-green-dark: #007734;
+    --pietsmiet-grey: #3d4852;
 }
 
 /* Gesamte Seite (outer) */
@@ -26,7 +26,7 @@ main.container,
 
 /* Nav Dropdowns */
 nav .dropdown-item .dropdown-menu .dropdown-menu-content,
-.bg-grey-lighter {
+.bg-grey-lighter, .bg-card {
   background-color: var(--background-lighter);
 }
 .text-ps-dark {
@@ -89,3 +89,6 @@ nav .dropdown-item .dropdown-menu .dropdown-menu-content,
   fill: black;
 }
 
+#theme-switch {
+  color: var(--background-darker);
+}
