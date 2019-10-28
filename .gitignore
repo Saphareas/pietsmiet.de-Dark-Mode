@@ -7,3 +7,5 @@ ps-dark-*
 */desktop\.ini
 .directory
 *.old
+.web-extension-id
+web-ext-artifacts/
