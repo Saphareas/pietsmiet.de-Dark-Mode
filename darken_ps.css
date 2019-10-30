@@ -5,23 +5,24 @@
  */
 
 :root {
-    --background-lighter: #373737;
+    --background-lighter: #444;
     --background-dark: #242424;
     --background-darker: #111111;
     --pietsmiet-green-light: #28cc70;
+    --pietsmiet-green: #039a45;
     --pietsmiet-green-dark: #007734;
     --pietsmiet-grey: #3d4852;
 }
 
 /* Gesamte Seite (outer) */
 body, #app {
-    background: var(--background-darker);
+    background-color: var(--background-darker);
 }
 /* Gesamte Seite (inner) */
 main.container,
 .bg-white {
-    background: var(--background-dark);
-    color: white;
+    background-color: var(--background-dark);
+    color: whitesmoke;
 }
 
 /* Nav Dropdowns */
@@ -32,13 +33,23 @@ nav .dropdown-item .dropdown-menu .dropdown-menu-content,
 .text-ps-dark {
   color: var(--pietsmiet-green-light);
 }
-.hover\:text-ps-darker:hover {
+.hover\:text-ps-darker:hover,
+.text-grey-darker,
+.text-grey-darkest {
     color: whitesmoke;
 }
 
 /* Content Cards für Videos etc. */
 .media--description {
   background-color: var(--background-lighter);
+}
+
+/* Clips */
+.media {
+  background-color: var(--pietsmiet-green);
+}
+.media > .bg-placeholder {
+  background-color: #22292f;
 }
 
 /* Kommentieren-Text Area */
@@ -78,6 +89,9 @@ nav .dropdown-item .dropdown-menu .dropdown-menu-content,
 .vue {
     display: none;
 }
+.OUTBRAIN * {
+  color: lightgray !important;
+}
 
 /* DSGVO Modal */
 .modal,
@@ -90,5 +104,10 @@ nav .dropdown-item .dropdown-menu .dropdown-menu-content,
 }
 
 #theme-switch {
-  color: var(--background-darker);
+  filter: drop-shadow(0 0 3px black) !important;
+}
+
+.hover\:bg-grey-lighter:hover {
+  background: var(--pietsmiet-green);
+  color: whitesmoke;
 }
