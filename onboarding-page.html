@@ -10,7 +10,12 @@
       --background-darker: #111111;
       --pietsmiet-green: #007734;
     }
-    body { margin: 0; font-family: sans-serif; }
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #242424;
+      color: whitesmoke;
+    }
     main { height: 100vh; }
     .grid {
       display: grid;
@@ -27,8 +32,10 @@
       padding: 0 5vw;
       color: white;
     }
+    img {
+      box-shadow: 20px 20px 50px black;
+    }
   </style>
-  <script src="onboarding-page.js"></script>
   <title>MORREU!</title>
 </head>
 
@@ -46,13 +53,12 @@
 
     <section style="grid-area: usage">
       <h3>Anleitung</h3>
-      <p>Nachdem du die Erweiterung installiert hast, erscheint immer dieser Button, wenn du auf Pietsmiet.de unterwegs bist. Einfach draufklicken, und schon wechselt das Theme der Seite.
-        (Du kannst das mit dem Bild rechts testen.)
+      <p>Nachdem du die Erweiterung installiert hast, steht dir dieser Button zur Verfügung, wenn du auf Pietsmiet.de unterwegs bist. Einfach draufklicken, und schon wechselt das Theme der Seite.
       </p>
     </section>
 
     <aside style="grid-area: img; padding: 16px;">
-        <a id="bla" href="javascript:void(0)"><img src="before.jpeg" alt="hier Bild und so" width="100%"/></a>
+        <a href="javascript:void(0)"><img src="./after.png" alt="hier Bild und so" width="100%"/></a>
     </aside>
     <footer style="grid-area: footer">
       <p>¹Wenn dir diese Erweiterung wirklich richtig gut gefällt, wäre ich für eine kleine Spende dankbar:  <a href="https://paypal.me/saphareas">♥ Hier spenden</a></p>

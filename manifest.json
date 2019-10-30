@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Pietsmiet.de Dark Mode",
-  "version": "17.6.2",
+  "version": "17.10",
   "author": "Fabian Große/Saphareas",
   "homepage_url": "https://github.com/Saphareas/pietsmiet.de-Dark-Mode",
 
@@ -23,26 +23,16 @@
 
   "background": {
       "scripts": [
-        "background.js",
         "changelog.js"
       ],
       "persistent": true
     },
 
-  "page_action": {
-    "default_icon": {
-        "19": "icons/action-off-19.png",
-        "38": "icons/action-off-38.png"
-    },
-    "default_title": "Theme umschalten"
-  },
-
   "permissions": [
-    "tabs",
-    "storage",
     "notifications"
   ],
 
   "web_accessible_resources": ["darken_ps.css"]
 
 }
+

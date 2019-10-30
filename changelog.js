@@ -7,15 +7,16 @@
 function handleOnInstalled(details) {
     let manifest = browser.runtime.getManifest();
     if (details.reason == "install") {
-            browser.tabs.create({ url: "/onboarding-page.html" })
+        browser.tabs.create({ url: "/onboarding-page.html" })
     }
     else if (details.reason == "update") {
         let notificationOptions = {
             type: "basic",
             title: `Version ${manifest.version} Changelog`,
             message: `${manifest.name} wurde aktualisiert. Das hat sich geändert:
-• Bug auf der Landing page gefixt
-• Ab jetzt lizensiert unter der GPLv3`,
+• Erweiterung von Grund auf neu geschrieben
+• Es gibt jetzt einen Schalter direkt auf der Seite
+• Theme an das aktuelle Design der pietsmiet.de angepasst`,
             iconUrl: "icons/icon-48.png"
         };
         browser.notifications.create(notificationOptions);
