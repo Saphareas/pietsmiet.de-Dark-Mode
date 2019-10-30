@@ -22,12 +22,7 @@ Ich bin jemand, der gerne Abends im Bett und vor dem Schlafen Pietsmiet-Videos s
 
 ## Wie funktioniert's?
 
-Wenn ihr die Erweiterung für euren Browser installiert habt, erscheint in der Adressleiste ein Pietsmiet-Icon, sobald ihr pietsmiet.de aufruft.
-<p><img src=".github/darken_ps_RdMe_1.png" width=700 /></p>
-Sobald ihr auf dieses Icon klickt, wird die Seite abgedunkelt und das Icon wechselt zu schwarz.
-<p><img src=".github/darken_ps_RdMe_3.png" width=700 /></p>
-Ein weiterer klick macht dies rückgängig.
-Das dunkle Theme bleibt auch aktiv, wenn ihr euren Browser neustartet.
+Nachdem ihr die Erweiterung für euren Browser installiert habt, wird automatisch rechts oben im Navigationsmenü der pietsmiet.de ein neuer Button angezeigt. Sobald ihr auf diesen Button klickt, wird die Seite abgedunkelt. Ein weiterer klick macht dies wieder rückgängig. Das dunkle Theme bleibt auch aktiv, wenn ihr euren Browser neustartet.
 
 ## Installation
 
